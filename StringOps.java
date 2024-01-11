@@ -81,10 +81,10 @@ public class StringOps {
                     new_string+=c;
                 }
             }
-            char_prev=c;
-            if (char_prev==' '){
+            if (char_prev!=' ' && c==' '){
                 bool=false;
             }
+            char_prev=c;
         }
         // Write your code here:
         return new_string;
