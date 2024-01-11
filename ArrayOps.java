@@ -24,7 +24,7 @@ public class ArrayOps {
         int max_prev = array[0];
         int max_next = array[1];
         for (int i = 0; i < array.length; i++) {
-            if (max_next < array[i]) {
+            if (max_next <= array[i]) {
                 max_prev = max_next;
                 max_next = array[i];
             } else if (max_prev < array[i] && max_next > array[i]) {
