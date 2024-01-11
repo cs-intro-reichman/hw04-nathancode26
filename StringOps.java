@@ -22,8 +22,7 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        String na = " Inro to coMPUter SCIEncE ";
-        System.out.println(camelCase(na));
+       
     }
     public static String capVowelsLowRest (String string) {
         String new_string= "";
@@ -90,8 +89,21 @@ public class StringOps {
     }
 
     public static int[] allIndexOf (String string, char chr) {
-        // Write your code here:
-        return new int[1];
+        int len = 0;
+        int j = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == chr) {
+                len++;
+            }
+        }
+        int[] ar = new int[len];
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == chr) {
+                ar[j] = i;
+                j++;
+            }
+        }
+        return ar;
     }
 }
 

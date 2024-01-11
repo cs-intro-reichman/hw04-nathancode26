@@ -2,9 +2,6 @@ import java.util.Arrays;
 
 public class ArrayOps {
     public static void main(String[] args) {
-        int[] ar = {1, 1, -2, -4, -5};
-        int[] ar2 = {0, 4, 1, 9, 2};
-        System.out.println(isSorted(ar));
 
     }
 
