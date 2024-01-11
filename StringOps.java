@@ -54,7 +54,7 @@ public class StringOps {
         String new_string= "";
         char char_prev=' ';
         int len= string.length();
-        for(int i =0;i<len;i++){
+        for(int i =3;i<len;i++){
             char c =string.charAt(i);
             if (bool && c!=' ') {
                 if (c >= 41 && c <= 90) {
